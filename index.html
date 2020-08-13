@@ -1,4 +1,45 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
+<head>
+    <title>City Weather</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body style="padding: 25px; text-align: center; background-color: cadetblue;
+background-repeat:repeat-y; ">
+    <div className='box'>
+        <h1>Welcome</h1>
+        <label>City Name</label><br>
+        <br>
+        <input type="text" id="username" /><br><br>
+        <button onclick="getWeatherdata()" style="font-size: medium;">Get Weather Details</button><br>
+        <script src="JS/fun.js"></script>
+        <p id="result">
+        </p> 
+    </div>
+    <div style="margin-left: 340px;margin-top: 40px;">
+        <table class="table" id="weather_table" cellpadding="1" cellspacing="1">
+            <tr>
+                <thead>                    
+                    <th>temp</th>
+                    <th>feels_like</th>
+                    <th>temp_min </th>
+                    <th>temp_max </th>
+                    <th>pressure </th>
+                    <th>humidity </th>
+                </thead>
+            </tr>
+            <tbody>
+                <tr>
+                    <td id="temp"> </td>
+                    <td id="feels_like"> </td>
+                    <td id="temp_min"> </td>
+                    <td id="temp_max"></td>
+                    <td id="pressure"></td>
+                    <td id="humidity"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
 </html>
